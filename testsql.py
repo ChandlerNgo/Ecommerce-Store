@@ -22,5 +22,4 @@ with connection:
         sql = "SELECT `id`, `password` FROM `users` WHERE `email`=%s"
         cursor.execute(sql, ('webmaster@python.org',))
         result = cursor.fetchone()
-        print(result)
         
